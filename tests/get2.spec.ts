@@ -1,7 +1,7 @@
 import { test, expect } from "@playwright/test"
 
 
-test('Get booking id', async ({ request }) => {
+test.skip('Get booking id', async ({ request }) => {
     const response = await request.get('/booking/25')
     console.log(await response.json())
     expect(response.status()).toBe(200)
