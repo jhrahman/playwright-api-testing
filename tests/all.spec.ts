@@ -1,6 +1,6 @@
 import { test, expect } from '@playwright/test'
 
-test.describe.serial('CREATE -> GET, DELETE -> GET', () => {
+test.describe.serial('CREATE -> GET, UPDATE -> GET, DELETE -> GET', () => {
 
     let bookingID: number
     let tokenID: string
